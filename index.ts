@@ -49,3 +49,21 @@ appDiv4.innerHTML = `
 <h1>Any variable</h1>
 <h2>${notSure}</h2>
 `;
+
+function warUser(): void {
+  console.log('This is my warning message');
+}
+
+let myFunction: void = warUser();
+
+let unusable: void = undefined;
+unusable = null;
+
+myFunction;
+
+const appDiv5: HTMLElement = document.getElementById('void');
+appDiv5.innerHTML = `
+<h1>Void</h1>
+<h2>unusable: ${unusable}</h2>
+<h2>myFunction: ${myFunction}</h2>
+`;
